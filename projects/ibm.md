@@ -1,0 +1,22 @@
+### EyeMouse: Gaze-Based Cursor Control System
+
+![Gaze Geometry Diagram](<INSERT_IMAGE_URL_1>)  
+![EyeMouse Prototype Demo](<INSERT_IMAGE_URL_2>)
+
+**Role & Timeline**  
+Final-Year Project @ IIT Kanpur — 2011
+
+**Overview**  
+Built India’s first real-time gaze-driven cursor control system from scratch, without relying on neural nets or heavyweight CV libraries. The user simply looks at a point on screen, and the system maps head and eye landmarks via geometric models to move the cursor there with sub-100 ms latency on modest CPU hardware.
+
+**Key Contributions**  
+- **Custom Landmark Detection:** Implemented low-latency iris and head-pose estimation using handcrafted geometric algorithms.  
+- **Lightweight Pipeline:** Optimized image capture, feature extraction, and mapping routines to run at ≥15 FPS on a single core, without GPU acceleration.  
+- **End-to-End Integration:** Connected video input, gaze estimation, and OS‐level cursor APIs into a turnkey desktop application.
+
+**Awards & Impact**  
+- **IBM WebContest Innovation Award** for “Best Student Project” (2011)  
+- Sparked my first hardware-software startup, partnering with an electronics engineer to build interactive assistive devices.
+
+**Resources**  
+- Paper: [IBM WebContest Winning Submission (PDF)](https://github.com/4g/4g.github.io/raw/master/IBM%20paper.pdf)  

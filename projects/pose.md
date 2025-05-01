@@ -1,0 +1,33 @@
+## Pose Estimation on the Edge: Real-time Workout Feedback
+
+![Embedded ML Architecture](<INSERT_IMAGE_URL_1>)  
+![Model Variants Performance](<INSERT_IMAGE_URL_2>)
+
+**Role & Timeline**  
+Machine Learning Lead @ cult.fit — Jul 2020 to Dec 2021
+
+**Overview**  
+Built an on-device pose-estimation pipeline using TensorFlow Lite to power interactive workouts with real-time rep-counting, energy scoring, and form feedback without any server round-trips.
+
+**Model & Deployment**  
+- **Architecture:** CenterNet-inspired U-Net with MobileNet backbone, predicting 30 keypoint heatmaps (256×256 → 64×64).  
+- **Variants:**  
+  - **SMALL:** 1.27 M params, 58.6 FPS on laptop CPU  
+  - **MEDIUM:** 2.45 M params, 29.8 FPS  
+  - **LARGE:** 3.79 M params, 5.8 FPS 
+  - **Edge Optimizations:** Mixed-precision training, data caching, and TFLite integration for sub-20 ms/frame inference on mobile CPUs.
+
+**Robustness & Accuracy**  
+- **Augmentations:** Random occlusion, brightness/contrast shifts, 90° rotations, horizontal flips.  
+- **Inference Enhancements:**  
+  - **Dynamic Cropping:** Uses last-frame keypoints to crop noisy inputs.  
+  - **Low-Pass Filter:** Smooths high-frequency jitter for stable joint tracking. :contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}
+
+**Applications**  
+- **Rep Counting:** Rule-based state machine on keypoints, deployed in the cult.fit app and gym-mirror prototype.  
+- **Energy Meter:** Velocity-based scoring displayed live in UI to gamify workouts.
+
+**Links & Resources** 
+- Demo Images:  
+  - [Architecture Diagram](https://drive.google.com/file/d/1bXlJB7xrEURkRF_aE9Sv25fHI5e0RkwY/view?usp=sharing)  
+  - [Energy Meter UI](https://drive.google.com/file/d/18nPmwtC2yCFOxkDcAbVycDC2HkEqrS93/view?usp=sharing)
