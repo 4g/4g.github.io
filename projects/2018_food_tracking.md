@@ -1,8 +1,6 @@
 ### Indian Food Recognition & Automated Logging
 
-![Food Recognition UI](<INSERT_IMAGE_URL_1>)
-![Sample Detections](<INSERT_IMAGE_URL_2>)
-
+![Food Recognition UI](assets/hfme_food.png){: width="10%" }
 **Machine Learning Lead** @ HealthifyMe  — May 2018 to Jul 2019  
 **Location:** Bengaluru, India
 
