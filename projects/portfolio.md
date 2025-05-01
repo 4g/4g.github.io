@@ -31,8 +31,8 @@
 
 
 - [EyeMouse: Gaze-Based Cursor Control](2011_ibm.md)  
-**Final-Year Project @ IIT Kanpur** [2011]  
-  Enabled hands-free cursor control via real-time gaze tracking by modeling head and eye geometry—achieving sub-100 ms latency on modest CPU hardware without heavy CV libraries.
+**Co founder @ CHI Labs** [2011]  
+  Started a company building hands free computer control device. Enabled hands-free cursor control via real-time gaze tracking by modeling head and eye geometry—achieving sub-100 ms latency on modest CPU hardware without heavy CV libraries. Our team won IBM Innovation webcontest 2011 for innovations in computer vision. 
 
 
 
