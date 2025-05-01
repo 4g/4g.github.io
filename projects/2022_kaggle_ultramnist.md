@@ -1,8 +1,5 @@
 ## Rank 1 @ Kaggle UltraMNIST 
 
-![Synthetic Data Samples](<INSERT_IMAGE_URL_1>)  
-![Detection & Classification Pipeline](<INSERT_IMAGE_URL_2>)
-
 Independent Project — Kaggle UltraMNIST Competition (Date)
 
 **Overview**  
@@ -10,7 +7,7 @@ Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test a
 
 **Key Components**  
 - **Synthetic Data Generation**  
-  - Created checkerboards with boxes, circles, triangles.  
+  - Created checkerboards with boxes, circles, triangles. Used solvers to determine placement of digits so that they dont overlap. 
   - Applied perspective, rotation, zoom, and uniform digit placement (all 70 000 MNIST digits + empty images).  
 - **Detection (YOLOv5s)**  
   - Input: 2560×2560; augmentation: light rotate/scale/translate/HSV/mosaic.  
@@ -27,5 +24,5 @@ Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test a
 
 **Resources**  
 - Code & Models: [github.com/4g/umnist](https://github.com/4g/umnist)  
-- Competition: [UltraMNIST on Kaggle](https://www.kaggle.com/competitions/ultra-mnist)  
-- Writeup : https://www.kaggle.com/competitions/ultra-mnist/discussion/319145
+- Competition: [UltraMNIST on Kaggle](https://www.kaggle.com/competitions/ultra-mnist/leaderboard)  
+- Writeup : [Kaggle writeup](https://www.kaggle.com/competitions/ultra-mnist/discussion/319145)

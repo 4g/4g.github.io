@@ -27,8 +27,4 @@ Designed and built a real-time liveness verification system to block sophisticat
 
 **Deployment & Impact**  
 - Packaged as a Dockerized FastAPI service (Gunicorn + 2 Uvicorn workers) on port 8085; also deployed on Kubernetes via Jarvis.  
-- Reduced fraudulent onboarding by ~‍X % (internal metric).  
-
-**Resources**  
-- Repo: [epiFi/inhouse-liveness](https://github.com/epiFi/inhouse-liveness)  
-- Sample Spoof Demo: [Watch Video](<INSERT_VIDEO_URL>)  
+- Resulted in removal of 100k+ accounts and stopped similar number from onboarding. 
