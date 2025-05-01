@@ -1,6 +1,5 @@
 ### Indian Food Recognition & Automated Logging
 
-
 **Machine Learning Lead** @ HealthifyMe  — May 2018 to Jul 2019  
 
 **Overview**  
