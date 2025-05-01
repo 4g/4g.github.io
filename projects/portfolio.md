@@ -1,8 +1,8 @@
 ## Portfolio
 
 - [Indri: Ultralight Multimodal Audio Model](2024_indri_tts.md)  
-**ML Lead @ Meraki Labs** [2024]  
-  Built a 124 M-parameter TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
+**Contributor** @ **Indrivoice** [2024]  
+  Open sourced a 124 M-parameter TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
 
 
 - [Fraud Detection & Liveness Verification](2022_jamtara.md)  
