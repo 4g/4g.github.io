@@ -3,11 +3,10 @@
 ![Synthetic Data Samples](<INSERT_IMAGE_URL_1>)  
 ![Detection & Classification Pipeline](<INSERT_IMAGE_URL_2>)
 
-**Role & Timeline**  
 Independent Project — Kaggle UltraMNIST Competition (Date)
 
 **Overview**  
-Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test accuracy. Combined a small-object detector (YOLOv5s) and a high-accuracy classifier (EfficientNetV2-B1) on a custom synthetic dataset to handle 2560×2560 images containing up to five tiny digits.
+Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test accuracy. Combined a small-object detector (YOLOv5s) and a high-accuracy classifier (EfficientNetV2-B1) on a custom synthetic dataset to handle 2560×2560 images containing up to five tiny objects.
 
 **Key Components**  
 - **Synthetic Data Generation**  

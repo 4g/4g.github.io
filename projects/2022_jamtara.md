@@ -3,9 +3,7 @@
 ![Liveness Pipeline Overview](<INSERT_IMAGE_URL_1>)  
 ![Multi-Modal Signal Timeline](<INSERT_IMAGE_URL_2>)
 
-**Role & Timeline**  
-Freelance ML Engineer @ Fi — Jul 2022 to Jul 2023  
-**Location:** Bengaluru, India
+**Machine Learning Lead** @ Fi.money — Jul 2022 to Jul 2023
 
 **Overview**  
 Designed and built a real-time liveness verification system to block sophisticated fraudsters during Fi account onboarding. Users record an 8 s video speaking 4 random digits—our pipeline processes the first 8 s at 5 fps, extracting multi-modal time-series signals from both video and audio to detect spoofing attempts (replayed videos, displayed photos, hired actors).
