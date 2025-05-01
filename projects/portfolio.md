@@ -1,8 +1,8 @@
-## Portfolio
+## CV
 
-- [Indri: Ultralight Multimodal Audio Model](2024_indri_tts.md)  
-**Contributor** @ **Indrivoice** [2024]  
-  Open sourced a 124 M-parameter TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
+- [Indri: UltraFast and realistic TTS model](2024_indri_tts.md)  
+**Lead** @ **Indrivoice** [2024]  
+  Built and open sourced a 124 M-parameter gpt2 based TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
 
 
 - [Fraud Detection & Liveness Verification](2022_jamtara.md)  

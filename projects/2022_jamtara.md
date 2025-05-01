@@ -14,7 +14,7 @@ Designed and built a real-time liveness verification system to block sophisticat
   - MediaPipe face & facemesh extraction via an object pool for concurrency safety.  
   - Audio loaded as a 1D NumPy waveform.  
 - **Image Signals:**  
-  1. **Spoof Score:** MobileNet classifier flags photo/video replays (moire patterns, device borders).  
+  1. **Spoof Score:** MobileNet classifier flags photo/video replays (detects moire patterns, device borders). We used grad cam to figure out what the model was looking at.
   2. **Lip-Openness:** Distance between upper & lower lips to verify speech.  
   3. **Multi-Face Consistency:** Embedding-distance score to spot extra actors.  
   4. **Video Quality:** Frame brightness & variance metrics.  
@@ -26,5 +26,5 @@ Designed and built a real-time liveness verification system to block sophisticat
   1D convolutional network across [40 time-steps × N signals], learning temporal and cross-signal anomalies (e.g. heard speech without lip movement).
 
 **Deployment & Impact**  
-- Packaged as a Dockerized FastAPI service (Gunicorn + 2 Uvicorn workers) on port 8085; also deployed on Kubernetes via Jarvis.  
+- Packaged as a Dockerized FastAPI service. Total cost of service was 4x lower than external vendor.  
 - Resulted in removal of 100k+ accounts and stopped similar number from onboarding. 
