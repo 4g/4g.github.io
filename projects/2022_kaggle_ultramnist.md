@@ -5,6 +5,8 @@ Independent Project — Kaggle UltraMNIST Competition (Date)
 **Overview**  
 Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test accuracy. Combined a small-object detector (YOLOv5s) and a high-accuracy classifier (EfficientNetV2-B1) on a custom synthetic dataset to handle 2560×2560 images containing up to five tiny objects.
 ![aasdzmhqax.jpeg](assets/aasdzmhqax.jpeg){: width="50%" }
+
+
 **Key Components**  
 - **Synthetic Data Generation**  
   - Created checkerboards with boxes, circles, triangles. Used solvers to determine placement of digits so that they dont overlap. 
