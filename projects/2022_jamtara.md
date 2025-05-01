@@ -1,8 +1,5 @@
 ### Fraud Detection & Liveness Verification
 
-![Liveness Pipeline Overview](<INSERT_IMAGE_URL_1>)  
-![Multi-Modal Signal Timeline](<INSERT_IMAGE_URL_2>)
-
 **Machine Learning Lead** @ Fi.money — Jul 2022 to Jul 2023
 
 **Overview**  
