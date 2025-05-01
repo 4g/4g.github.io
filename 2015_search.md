@@ -24,4 +24,4 @@ As deep learning started emerging, designed deep NNs to match user queries with 
   - [US20160350395A1: Synonym Generation](https://patents.google.com/patent/US20160350395A1)
 
 **Resources**  
-- Blog: [Discovery | Synonym Generation at Bloomreach](https://dev.to/bloomreach/discovery-synonym-generation-at-bloomreach-ob5)
+- Blog: [Synonym Generation](https://dev.to/bloomreach/discovery-synonym-generation-at-bloomreach-ob5)
