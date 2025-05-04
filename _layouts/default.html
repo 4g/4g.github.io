@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+      <style>
+          /* always reserve scrollbar space to prevent layout shift */
+          html {
+            overflow-y: scroll;
+          }
+
+          /* reset default body margins */
+          body {
+            margin: 0;
+            padding: 0;
+          }
+
+          /* center content and cap width */
+          .wrapper {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            box-sizing: border-box;
+          }
+    </style>
+
+
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
