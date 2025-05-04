@@ -6,7 +6,7 @@
 Faced with high dropout rates due to manual food logging, we built India’s first AI-powered “snap‐and‐log” system, proving feasibility to our CEO/CTO in less than 2 weeks. Over 1 million Indian‐food images were collected to train a bespoke deep‐learning classifier, achieving > 83 % accuracy on diverse regional dishes. Thousands of users now log meals via a single tap.
 
 
-![Food Recognition UI](assets/hfme_food.png){: width="50%" }
+![Food Recognition UI](assets/hfme_food.jpg){: width="50%" }
 
 **Work**  
 - **Rapid Prototype (2 weeks):**  
