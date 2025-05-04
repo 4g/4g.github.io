@@ -1,4 +1,4 @@
-## CV
+## Work
 
 - [Indri: UltraFast and realistic TTS model](2024_indri_tts.md)  
 **Lead** @ **Indrivoice** [2024]  
@@ -33,3 +33,4 @@
 - [EyeMouse: Gaze-Based Cursor Control](2011_ibm.md)  
 **Co founder @ CHI Labs** [2011]  
   Started a company to build hands free computer control devices. Enabled hands-free cursor control via real-time gaze tracking by modeling head and eye geometry—achieving sub-100 ms latency on modest CPU hardware without heavy CV libraries. Our team won IBM Innovation webcontest 2011 for innovations in computer vision. 
+
