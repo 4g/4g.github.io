@@ -1,6 +1,6 @@
 ## Work
 
-I love solving hard problems with Machine Learning. In my free time I love to reverse engineer systems I like.
+I love solving with models, both large and small. In my free time I reverse engineer systems I like.
 
 - [Indri: UltraFast and realistic TTS model](2024_indri_tts.md)  
 **Lead** @ **Indrivoice** [2024]  
