@@ -14,4 +14,5 @@ This blog has my ideas, and attempts to solve this problem.
 
 - [agent see agent do](agents.md): how to build agents that learn by looking at you work 
 
+
 - [new internet](internet.md): how internet _might_ look in a few years.  
