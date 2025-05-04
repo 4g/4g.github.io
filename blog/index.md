@@ -2,7 +2,7 @@
 
 experiments to understand LLMs/VLMs and how we may tame them. 
 
-###### May 25
+### May 25
 
 - [models of small worlds](test.md) : LLMs are terrible at visual reasoning and cannot even reason around basic visual puzzles. 
 There is a [million dollar prize](https://www.arcprize.org) to anyone who can make them 85% accurate on visual puzzles that are very simple for humans.
@@ -17,5 +17,5 @@ This blog has my ideas, and attempts to solve this problem.
 - [agent see agent do](agents.md): how to build agents that learn by looking at you work 
 
 
-###### April 25
+### April 25
 - [new internet](internet.md): how internet _might_ look in a few years.  
