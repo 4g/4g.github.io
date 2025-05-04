@@ -66,6 +66,11 @@
         <ul style="clear: both; list-style: disc; margin: 0.5rem 0 0 1rem; padding: 0;">
           <li><a href="{{ '/' | relative_url }}">Work</a></li>
           <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        </ul>
+        <p></p>
+
+        {% if site.show_downloads %}
+        <ul class="social-icons" style="display:flex; gap:1rem; list-style:none; padding:0; margin:0;">
           <li>
             <a href="mailto:apurvagup@gmail.com" title="Email me">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5">
@@ -100,6 +105,7 @@
           </li>
         </ul>
 
+        {% endif %}
       </header>
       <section>
 
