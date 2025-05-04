@@ -1,5 +1,7 @@
 ## Work
 
+I love solving hard problems with Machine Learning. In my free time I love to reverse engineer systems I like.
+
 - [Indri: UltraFast and realistic TTS model](2024_indri_tts.md)  
 **Lead** @ **Indrivoice** [2024]  
   Built and open sourced a 124 M-parameter gpt2 based TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
