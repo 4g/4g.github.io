@@ -5,13 +5,14 @@ VLMs are very good at identifying events in videos. But it is hard to focus thei
 
 TLDR : Not really. Adding cues confuses models.  
 
-Without cues
+**Without cues**
 
-<img src="../assets/plain.gif" alt="plain video" width="200"/> 
+![plain](../assets/plain.gif) 
 
-With cues
+**With cues** [bounding boxes and trajectories of relevant objects]
 
-<img src="../assets/trajectory.gif" alt="cues video" width="200"/>
+![plain](../assets/trajectory.gif) 
+
 
 ## Experiment
 ### Training
@@ -32,25 +33,18 @@ Create multiple choice questions for every video, to predict the object or verb
 ![video 137108 preview](../assets/ice_plain.gif) ![video 137108 preview](../assets/ice_cues.gif) 
 
 **Questions**
-
- Q1. dropping _____ into red rubber ice-tray.  <br>Options: crumpled paper, a gift bag, thermos bottle, a cheese cube  <br>Answer: a cheese cube  <br><br> Q2. dropping a cheese cube into _____.  <br>Options: dettol bottle, salt shaker, stack plastic cups, red rubber ice-tray  <br>Answer: red rubber ice-tray  <br><br> Q3. _____ a cheese cube into red rubber ice-tray.  <br>Options: hitting, pulling, falling, dropping  <br>Answer: dropping 
-
-----
-
-#### Training sample
-```json
-{
-   "question": "_____ plastic spoon down",
-   "choices": [
-    "moving",
-    "tipping",
-    "lifting",
-    "folding"
-   ],
-   "answer": "moving",
-   "video": "104789",
-   "type": "verb"
-  }
+```txt
+ Q1. dropping _____ into red rubber ice-tray.  
+ Options: crumpled paper, a gift bag, thermos bottle, a cheese cube
+ Answer: a cheese cube
+ 
+ Q2. dropping a cheese cube into _____.
+ Options: dettol bottle, salt shaker, stack plastic cups, red rubber ice-tray
+ Answer: red rubber ice-tray
+ 
+ Q3. _____ a cheese cube into red rubber ice-tray.
+ Options: hitting, pulling, falling, dropping
+ Answer: dropping 
 ```
 
 #### Setup
@@ -66,7 +60,6 @@ Create multiple choice questions for every video, to predict the object or verb
 
 ### Results
 Before finetuning, object accuracy is lower for cued videos. 
-
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | pretrained | plain       | 90.77%     | 63.90%   | 79.39%      |
@@ -74,7 +67,6 @@ Before finetuning, object accuracy is lower for cued videos.
 
 
 After finetuning, cued videos perform worse in both object and verb category. 
-
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | finetuned                  | plain       | 96.40%     | 98.30%   | 97.29%      |
@@ -99,6 +91,5 @@ We debug this in multiple ways by checking attention of vit, llm and measuring p
 **This indicates that**
 - instead of reinforcing relevant regions, trajectory overlays can diffuse or misplace the model’s focus.
 - simply adding cues in few examples is not enough and more work is needed to make cues work for vlms. 
-
 ## Reproduce
 Follow instructions at : https://github.com/4g/visual_cues.git
