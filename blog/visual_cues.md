@@ -60,6 +60,7 @@ Create multiple choice questions for every video, to predict the object or verb
 
 ### Results
 Before finetuning, object accuracy is lower for cued videos. 
+
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | pretrained | plain       | 90.77%     | 63.90%   | 79.39%      |
@@ -67,6 +68,7 @@ Before finetuning, object accuracy is lower for cued videos.
 
 
 After finetuning, cued videos perform worse in both object and verb category. 
+
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | finetuned                  | plain       | 96.40%     | 98.30%   | 97.29%      |
