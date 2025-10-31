@@ -5,7 +5,13 @@ VLMs are very good at identifying events in videos. But it is hard to focus thei
 
 TLDR : Not really. Adding cues confuses models.  
 
-![plain video ](../assets/plain.gif) ![trajectory and bbox cues](../assets/trajectory.gif)
+Without cues
+
+<img src="../assets/plain.gif" alt="plain video" width="200"/> 
+
+With cues
+
+<img src="../assets/trajectory.gif" alt="cues video" width="200"/>
 
 ## Experiment
 ### Training
@@ -21,10 +27,15 @@ A ~9.5k video subset of ssv2 dataset which has 50 verbs and ~4000 objects.
 
 Create multiple choice questions for every video, to predict the object or verb 
 
-|Video plain / cued| mcq |
-|---|---|
-| ![video 137108 preview](../assets/ice_plain.gif) ![video 137108 preview](../assets/ice_cues.gif) | Q1. dropping _____ into red rubber ice-tray.  <br>Options: crumpled paper, a gift bag, thermos bottle, a cheese cube  <br>Answer: a cheese cube  <br><br> Q2. dropping a cheese cube into _____.  <br>Options: dettol bottle, salt shaker, stack plastic cups, red rubber ice-tray  <br>Answer: red rubber ice-tray  <br><br> Q3. _____ a cheese cube into red rubber ice-tray.  <br>Options: hitting, pulling, falling, dropping  <br>Answer: dropping |
+**Videos**
 
+![video 137108 preview](../assets/ice_plain.gif) ![video 137108 preview](../assets/ice_cues.gif) 
+
+**Questions**
+
+ Q1. dropping _____ into red rubber ice-tray.  <br>Options: crumpled paper, a gift bag, thermos bottle, a cheese cube  <br>Answer: a cheese cube  <br><br> Q2. dropping a cheese cube into _____.  <br>Options: dettol bottle, salt shaker, stack plastic cups, red rubber ice-tray  <br>Answer: red rubber ice-tray  <br><br> Q3. _____ a cheese cube into red rubber ice-tray.  <br>Options: hitting, pulling, falling, dropping  <br>Answer: dropping 
+
+----
 
 #### Training sample
 ```json
