@@ -20,6 +20,7 @@ A ~9.5k video subset of ssv2 dataset which has 50 verbs and ~4000 objects.
 ```
 
 Create multiple choice questions for every video, to predict the object or verb 
+
 |Video plain / cued| mcq |
 |---|---|
 | ![video 137108 preview](../assets/ice_plain.gif) ![video 137108 preview](../assets/ice_cues.gif) | **Q1.** dropping _____ into red rubber ice-tray.  <br>**Options:** crumpled paper \| a gift bag \| thermos bottle \| **a cheese cube**  <br>**Answer:** a cheese cube  <br><br> **Q2.** dropping a cheese cube into _____.  <br>**Options:** dettol bottle \| salt shaker \| stack plastic cups \| **red rubber ice-tray**  <br>**Answer:** red rubber ice-tray  <br><br> **Q3.** _____ a cheese cube into red rubber ice-tray.  <br>**Options:** hitting \| pulling \| falling \| **dropping**  <br>**Answer:** dropping |
@@ -53,6 +54,7 @@ Create multiple choice questions for every video, to predict the object or verb
 
 ### Results
 Before finetuning, object accuracy is lower for cued videos. 
+
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | pretrained | plain       | 90.77%     | 63.90%   | 79.39%      |
@@ -60,6 +62,7 @@ Before finetuning, object accuracy is lower for cued videos.
 
 
 After finetuning, cued videos perform worse in both object and verb category. 
+
 | model                      | videos      | object_acc | verb_acc | overall_acc |
 |---------------------------|-------------|-----------:|---------:|------------:|
 | finetuned                  | plain       | 96.40%     | 98.30%   | 97.29%      |
