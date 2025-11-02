@@ -93,5 +93,6 @@ We debug this in multiple ways by checking attention of vit, llm and measuring p
 **This indicates that**
 - instead of reinforcing relevant regions, trajectory overlays can diffuse or misplace the model’s focus.
 - simply adding cues in few examples is not enough and more work is needed to make cues work for vlms. 
+
 ## Reproduce
-Follow instructions at : https://github.com/4g/visual_cues.git
+Follow instructions at : [github repo](https://github.com/4g/visual_cues.git)

@@ -2,6 +2,11 @@
 
 Independent Project — Kaggle UltraMNIST Competition (Date)
 
+**Links**  
+- Code & Models: [github.com/4g/umnist](https://github.com/4g/umnist)  
+- Competition: [UltraMNIST on Kaggle](https://www.kaggle.com/competitions/ultra-mnist/leaderboard)  
+- Writeup : [Kaggle writeup](https://www.kaggle.com/competitions/ultra-mnist/discussion/319145)
+
 **Overview**  
 Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test accuracy. Combined a small-object detector (YOLOv5s) and a high-accuracy classifier (EfficientNetV2-B1) on a custom synthetic dataset to handle 2560×2560 images containing up to five tiny objects.
 ![aasdzmhqax.jpeg](assets/aasdzmhqax.jpeg){: width="50%" }
@@ -23,8 +28,3 @@ Secured **1st place** on the Kaggle UltraMNIST challenge with **99.109%** test a
 - **Post-Processing**  
   - Removed nested detections and low-confidence (< 0.45) preds.  
   - Final ensemble accuracy: **99.109%**.
-
-**Resources**  
-- Code & Models: [github.com/4g/umnist](https://github.com/4g/umnist)  
-- Competition: [UltraMNIST on Kaggle](https://www.kaggle.com/competitions/ultra-mnist/leaderboard)  
-- Writeup : [Kaggle writeup](https://www.kaggle.com/competitions/ultra-mnist/discussion/319145)
