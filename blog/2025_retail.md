@@ -5,6 +5,13 @@ Brands care about demographics, product and category affinity of their customers
 
 This is a prelimnary design of such a system. You can find an implementation that uses Gemini here : [github repo](https://github.com/4g/cctv)
 
+### Results
+Off the shelf VLMs are still far away from being used for retail setups. 
+1. Low model performance on short but complex events: Although vlms describe overall picture quite well, their acuity on small events (like a person suddenly hiding something) is bad.
+2. Models are not multi-view. CCTV like setups require multi camera models. Creating a storyline/session of a person in a store requires attaching a tracker. 
+3. Lack of data, retail data is not available on youtube or other data sources. So VLMs perform very bad on these events out of box.
+4. Low latency required for theft like events. High cost of compute still make VLMs a costly solution to process videos, specially realtime where latency is paramount.
+
 ### Cameras
 In India retailers are forced to install cameras as its a compliance requirement. These cameras are mostly IP cameras with attached DVR or NVR, and are accessible over network via RTSP. 
 
@@ -76,3 +83,4 @@ Most DVR devices expose old saved videos also via track apis and we can download
 4. **Analytics Queries**: For analytical queries any standard db and query will do. data is small in size, few KBs per camera per day. Even after a year the amount of data will not exceed GBs.
 
 5. **Search queries** : Now that we have transcribed what is happening in the video, we can also execute search across the text, to retrieve relevant chunks. Embed the text corresponding to chunks, and run a simple embedding match. Index embeddings if there is too many of them. 
+
