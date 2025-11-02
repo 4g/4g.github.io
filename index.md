@@ -1,38 +1,29 @@
-## Work
+## Notes
 
-I love solving with models, both large and small. In my free time I reverse engineer systems I like.
+experiments to understand LLMs/VLMs and how we may tame them. 
 
-- [Indri: UltraFast and realistic TTS model](2024_indri_tts.md)  
-**Lead** @ **Indrivoice** [2024]  
-  Built and open sourced a 124 M-parameter gpt2 based TTS/ASR treating audio as discrete tokens, supporting Hindi/English streaming at realtime CPU performance delivering high quality speech synthesis and recognition in a tiny footprint.
+*I ask weird questions, and then answer them myself. Sometimes.*
 
-
-- [Fraud Detection & Liveness Verification](2022_jamtara.md)  
-**ML Lead @ Fi** [2022]  
-  Blocked sophisticated fraud during onboarding by extracting multi-modal video/audio signals from 8 s liveness videos and training a 1D-conv network to detect spoofing attempts. Resulted in deactivation of > 100k user accounts.
+- [do visual cues help vlms](notes/visual_cues.md): VLMs are very good at identifying events in videos. But it is hard to focus their attention on a specific action or object, specially if the object or action is a small part of the video. Humans use visual cues to attract attention towards a region or action, e.g. a stop sign on the road or a wiggly line drawn under wrongly spelled text. Once focused we can observe finegrained details from that region. This experiment is to determine if using visual cues like bboxes/trajectories will help VLMs focus better.
 
 
-- [Rank 1 @ Kaggle UltraMNIST](2022_kaggle_ultramnist.md)  
- **Solo Competitor** [2022]  
-  Solved the challenge of detecting tiny objects (few pixels wide) in large (2560×2560) images by combining a detector with classifier and training on synthetic data achieving 99.109 % accuracy and 1st place on the leaderboard.
+- [using vlms to analyse retail stores](notes/2025_retail.md): Brands care about demographics, product and category affinity of their customers. They would like to know how much time people spend on looking at their products, so they can design their campaigns effectively. Instrumentation for online commerce is well developed with precise pixels capturing every user interaction and analytics + ML systems detecting patterns. These help merchandisers make decisions about pricing, placement, tg etc. Can VLMs be used to build an offline equivalent for pixels? Most stores have cctv cameras that see all aisles and areas of a store. These cameras can see finegrained events like 'chips were picked but never kept in cart', which can form a detailed pixel like event heirarchy for bounce, add to cart, conversion. 
 
 
-- [Pose Estimation on the Edge](2020_pose.md)  
-**ML Lead @ cult.fit** [2020]  
-  Deployed an on-device TensorFlow Lite pose-estimation pipeline for real-time workout feedback enabling rep counting, form scoring, and gamified UI without server round-trips. Built 1MB models to do accurate pose detection on complex poses.
+- [models of small worlds](notes/small_worlds.md) : LLMs are terrible at visual reasoning and cannot even reason around basic visual puzzles. 
+There is a [million dollar prize](https://www.arcprize.org) to anyone who can make them 85% accurate on visual puzzles that are very simple for humans.
+These puzzles use simple concepts such as copying, moving, colliding, large eats small etc. in a small world to create scenarios. 
+To solve this, we need to find the precise program which will generate a scenario and apply it to a another instance of that world to solve a puzzle. 
+This blog has my ideas, and attempts to solve this problem. 
 
 
-- [Automated Food Recognition](2018_food_tracking.md)  
-**ML Lead @ HealthifyMe** [2018]  
-  Solved high dropout from manual food logging by launching a snap-and-log system in two weeks curating an initial dataset, training a lightweight CNN, and automating meal tracking for diverse Indian dishes.
+- [new internet](notes/internet.md): how internet _might_ look in a few years. 
 
 
-- [Ecommerce Search](2015_search.md)  
-**Staff Engineer @ BloomReach** [2013]  
-  Automated synonym extraction at scale by mining 100 M+ product descriptions and 30 M+ queries—combining contextual embeddings and supervised filtering to improve e-commerce search relevance. Granted two patents for the algorithms developed during this work.
+- [MM duplex](notes/mmduplex.md) : Can a Moshi like duplex model be made for videos ? And will it be better than usual vlms at parsing live events. This experiment was abandoned in favor of optical flow based video tokenizer. The code from mmduplex right now is a vlm that uses single token per image. It works well for describing videos.
 
+- [Spatiotemporal tracking using vlms](notes/groceryvision.md) : Can vlms do precise spatio-temporal tracking of objects (No) ? Is that needed to solve real world problems, like detecting events (No) ? 
 
-- [EyeMouse: Gaze-Based Cursor Control](2011_ibm.md)  
-**Co founder @ CHI Labs** [2011]  
-  Started a company to build hands free computer control devices. Enabled hands-free cursor control via real-time gaze tracking by modeling head and eye geometry—achieving sub-100 ms latency on modest CPU hardware without heavy CV libraries. Our team won IBM Innovation webcontest 2011 for innovations in computer vision. 
+- [Time series prediction using transformers](notes/timesfm.md) : Using timeseries for prediciting things like stock market. 
 
+- [AI tutor](notes/aitutor.md) : Is it even possible for an llm to actually teach without a shared mental space ? Teachers bring us to a shared space, by pointing to diagrams that they draw. Once I understand the diagram, the teacher and I are in the same shared visual space. Without this it is not possible to ensure the learner has understood. 
