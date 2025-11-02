@@ -11,7 +11,7 @@ In India retailers are forced to install cameras as its a compliance requirement
 ### VLMs
 VLMs such as Gemini, Qwen-VL are excellent at understanding videos. Here is an example of Gemini's response given a video from ucf_crime dataset.
 
-![image](https://raw.githubusercontent.com/4g/cctv/refs/heads/main/assets/shoplifting.gif?token=GHSAT0AAAAAAC5LH3NGZMTCGXJ4V6RYQH5I2IHQ42A)
+![image](https://raw.githubusercontent.com/4g/cctv/refs/heads/main/assets/shoplifting.gif)
 
 ```json
 [
