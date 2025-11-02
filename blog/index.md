@@ -2,6 +2,8 @@
 
 experiments to understand LLMs/VLMs and how we may tame them. 
 
+*I ask weird questions, and then answer them myself. Sometimes.*
+
 ### Oct 25
 - [do visual cues help vlms](visual_cues.md): VLMs are very good at identifying events in videos. But it is hard to focus their attention on a specific action or object, specially if the object or action is a small part of the video. Humans use visual cues to attract attention towards a region or action, e.g. a stop sign on the road or a wiggly line drawn under wrongly spelled text. Once focused we can observe finegrained details from that region. This experiment is to determine if using visual cues like bboxes/trajectories will help VLMs focus better.
 
@@ -25,5 +27,7 @@ This blog has my ideas, and attempts to solve this problem.
 ## Notes
 
 - [MM duplex](mmduplex.md) : Can a Moshi like duplex model be made for videos ? And will it be better than usual vlms at parsing live events. This experiment was abandoned in favor of optical flow based video tokenizer. The code from mmduplex right now is a vlm that uses single token per image. It works well for describing videos.
+- [Spatiotemporal tracking using vlms] (gvision.md) : Can vlms do precise spatio-temporal tracking of objects (No) ? Is that needed to solve real world problems, like detecting events (No) ? 
+
 - [Time series prediction using transformers](timesfm.md) : Using timeseries for prediciting things like stock market. 
 - [AI tutor](aitutor.md) : Is it even possible for an llm to actually teach without a shared mental space ? Teachers bring us to a shared space, by pointing to diagrams that they draw. Once I understand the diagram, the teacher and I are in the same shared visual space. Without this it is not possible to ensure the learner has understood. 
