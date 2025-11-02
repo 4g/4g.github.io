@@ -14,11 +14,5 @@ To solve this, we need to find the precise program which will generate a scenari
 This blog has my ideas, and attempts to solve this problem. 
 
 
-- [state of video understanding and analytics](video.md) : 
-
-
-- [agent see agent do](agents.md): how to build agents that learn by looking at you work 
-
-
 ### April 25
 - [new internet](internet.md): how internet _might_ look in a few years.  
