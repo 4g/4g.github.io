@@ -1,6 +1,8 @@
 ## ICCV Retail workshop Competition
 https://grocery-vision.github.io/
 
+[Github](https://github.com/4g/gvcomp-iccv2025/)
+
 ### Track 1
 
 - 3 classes of events : Take, Return, Rummage
@@ -13,6 +15,8 @@ https://grocery-vision.github.io/
 - 300k Frames
 - 52k tagged frames with bboxes and event classes
 - total 4k events ~1300 each class 
+
+![alt](https://raw.githubusercontent.com/4g/gvcomp-iccv2025/refs/heads/main/grocery_vision_result.gif)
 
 ### One VLM to rule them all
 - VLMs can emit rough bounding boxes
