@@ -27,7 +27,7 @@ This blog has my ideas, and attempts to solve this problem.
 ## Notes
 
 - [MM duplex](mmduplex.md) : Can a Moshi like duplex model be made for videos ? And will it be better than usual vlms at parsing live events. This experiment was abandoned in favor of optical flow based video tokenizer. The code from mmduplex right now is a vlm that uses single token per image. It works well for describing videos.
-- [Spatiotemporal tracking using vlms] (gvision.md) : Can vlms do precise spatio-temporal tracking of objects (No) ? Is that needed to solve real world problems, like detecting events (No) ? 
+- [Spatiotemporal tracking using vlms](groceryvision.md) : Can vlms do precise spatio-temporal tracking of objects (No) ? Is that needed to solve real world problems, like detecting events (No) ? 
 
 - [Time series prediction using transformers](timesfm.md) : Using timeseries for prediciting things like stock market. 
 - [AI tutor](aitutor.md) : Is it even possible for an llm to actually teach without a shared mental space ? Teachers bring us to a shared space, by pointing to diagrams that they draw. Once I understand the diagram, the teacher and I are in the same shared visual space. Without this it is not possible to ensure the learner has understood. 
