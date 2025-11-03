@@ -1,9 +1,7 @@
 ## Notes
 
-experiments to understand LLMs/VLMs and how we may tame them. 
-
+experiments to understand LLMs/VLMs and how we may tame them.   
 *I ask weird questions, and then answer them myself. Sometimes.*
-
 
 **[do visual cues help vlms](notes/visual_cues.md)**   
 VLMs are very good at identifying events in videos. But it is hard to focus their
@@ -26,14 +24,17 @@ This blog has my ideas, and attempts to solve this problem.
 how internet _might_ look in a few years. 
 
 
-**[MM duplex](notes/mmduplex.md)**   
+**[mm duplex](notes/mmduplex.md)**   
 Can a Moshi like duplex model be made for videos ? And will it be better than usual vlms at parsing live events. This experiment was abandoned in favor of optical flow based video tokenizer. The code from mmduplex right now is a vlm that uses single token per image. It works well for describing videos.
 
-**[Spatiotemporal tracking using vlms](notes/groceryvision.md)**   
+**[spatiotemporal tracking using vlms](notes/groceryvision.md)**   
 Can vlms do precise spatio-temporal tracking of objects (No) ? Is that needed to solve real world problems, like detecting events (No) ? 
 
-**[Time series prediction using transformers](notes/timesfm.md)**   
+**[time series prediction using transformers](notes/timesfm.md)**   
 Using timeseries for prediciting things like stock market. 
 
-**[AI tutor](notes/aitutor.md)**   
+**[ai tutor](notes/aitutor.md)**   
 Is it even possible for an llm to actually teach without a shared mental space ? Teachers bring us to a shared space, by pointing to diagrams that they draw. Once I understand the diagram, the teacher and I are in the same shared visual space. Without this it is not possible to ensure the learner has understood. 
+
+**[cooling datacenters](notes/dcool.md)**  
+We can modell a data center using data that has been collected over time. Using this data we can predict power usage for different scenarios, of all devices. We can run RL over this digital twin simulator with RL to get optimal policies which maintain PUE to lowest possible, while satisfying constraints.
